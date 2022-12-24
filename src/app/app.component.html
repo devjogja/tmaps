@@ -1,0 +1,12 @@
+District
+<select
+  class="ml-1"
+  name="zipcode"
+  [(ngModel)]="zipcode"
+  (ngModelChange)="changeZipcode()"
+>
+  <option>-All-</option>
+  <option *ngFor="let list of artworkList">{{list.zipcode}}</option>
+</select>
+<br />
+<div id="map"></div>
